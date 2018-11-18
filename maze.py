@@ -13,7 +13,7 @@ def parseInput(pathToInputFile):
     for line in file: 
         inputList.append(line.split(' '))
     
-    gridSize = [int(inputList[0][0]), int(inputList[0][1][0])]
+    gridSize = [int(inputList[0][0]), int(inputList[0][1].split('\n')[0])]
     playerPos = [int(inputList[1][0]), int(inputList[1][1]), inputList[1][2][0]]
     mirrorForward = []
     mirrorBack = []
